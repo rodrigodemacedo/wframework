@@ -1,0 +1,1 @@
+<div class="wrf_debugModeOn" style="text-align: center; font-size: 16px; background-color: #CE0; padding: 5px">:: DEBUG MODE ON ::</div>

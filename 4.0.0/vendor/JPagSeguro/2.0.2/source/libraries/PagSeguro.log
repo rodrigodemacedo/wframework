@@ -1,0 +1,21 @@
+{2012/01/13 01:39:33} [Info] PaymentService.Register(PaymentRequest(Reference=22,     SenderEmail=asd@asd.asd)) - begin 
+{2012/01/13 01:39:33} [Error] Exception: CURL can't connect: Couldn't resolve host 'ws.pagseguro.uol.com.br' 
+{2012/01/13 01:40:16} [Info] PaymentService.Register(PaymentRequest(Reference=24,     SenderEmail=asd@asd.asd)) - begin 
+{2012/01/13 01:40:16} [Error] Exception: CURL can't connect: Couldn't resolve host 'ws.pagseguro.uol.com.br' 
+{2012/01/13 01:40:40} [Info] PaymentService.Register(PaymentRequest(Reference=26,     SenderEmail=asd@asd.asd)) - begin 
+{2012/01/13 01:40:47} [Info] PaymentService.Register(PaymentRequest(Reference=27,     SenderEmail=asd@asd.asd)) - begin 
+{2012/01/13 01:41:04} [Info] PaymentService.Register(PaymentRequest(Reference=28,     SenderEmail=asd@asd.asd)) - begin 
+{2012/01/13 01:41:04} [Error] Exception: CURL can't connect: Couldn't resolve host 'ws.pagseguro.uol.com.br' 
+{2012/01/13 01:41:14} [Info] PaymentService.Register(PaymentRequest(Reference=29,     SenderEmail=asd@asd.asd)) - begin 
+{2012/01/13 01:41:14} [Error] Exception: CURL can't connect: Couldn't resolve host 'ws.pagseguro.uol.com.br' 
+{2012/01/13 01:41:22} [Info] PaymentService.Register(PaymentRequest(Reference=30,     SenderEmail=asd@asd.asd)) - begin 
+{2012/01/16 09:00:23} [Info] PaymentService.Register(PaymentRequest(Reference=35,     SenderEmail=asd@asd.asd)) - begin 
+{2012/01/16 09:00:23} [Error] Exception: CURL can't connect: Couldn't resolve host 'ws.pagseguro.uol.com.br' 
+{2012/01/16 09:00:43} [Info] PaymentService.Register(PaymentRequest(Reference=36,     SenderEmail=asd@asd.asd)) - begin 
+{2012/01/16 09:00:43} [Error] Exception: CURL can't connect: Couldn't resolve host 'ws.pagseguro.uol.com.br' 
+{2012/01/18 08:17:34} [Info] PaymentService.Register(PaymentRequest(Reference=37,     SenderEmail=asd@asd.asd)) - begin 
+{2012/01/18 08:17:34} [Error] Exception: CURL can't connect: Couldn't resolve host 'ws.pagseguro.uol.com.br' 
+{2012/01/18 20:44:44} [Info] PaymentService.Register(PaymentRequest(Reference=38,     SenderEmail=asd@asd.asd)) - begin 
+{2012/01/18 20:44:44} [Error] Exception: CURL can't connect: Couldn't resolve host 'ws.pagseguro.uol.com.br' 
+{2012/01/18 22:17:46} [Info] PaymentService.Register(PaymentRequest(Reference=39,     SenderEmail=asd@asd.asd)) - begin 
+{2012/01/18 22:17:46} [Error] Exception: CURL can't connect: Couldn't resolve host 'ws.pagseguro.uol.com.br' 

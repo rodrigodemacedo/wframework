@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+
+.jRulesValidator{
+ display: none;
+}
+
+.errorTextField{
+ border: 2px solid #F00 !important;
+}

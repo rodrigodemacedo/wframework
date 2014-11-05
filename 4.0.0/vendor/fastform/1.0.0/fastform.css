@@ -1,0 +1,47 @@
+@CHARSET "ISO-8859-1";
+/**
+* As configurações de tamanho abaixo são para uma área com largura de 700px;
+* O ideal é que se mantenha a quantidade abaixo de tamanho e preencher todos
+*/
+
+
+.linha{
+	padding: 5px;
+}
+
+.campo{
+	float: left;
+}
+
+.nova-linha{
+	margin-top: 10px;
+	clear: both;
+}
+
+.campo label:not(.label-interno){
+	display: block;
+	font-weight: bold;
+}
+
+.campo input:not(input[type="radio"]), .campo select{
+	border: 1px solid #CCC;
+	background-color: #F4FAFC;
+}
+
+form .linha .campo input[type="text"], form .linha .campo select{
+	font-family: "Lucida Console";
+	font-family: 13px;
+}
+
+.coluna-metade{
+	width: 49%;
+	float: left;
+	margin-left: 5px;
+}
+
+.linha .coluna-metade:first-child{
+	margin-left: 0px;
+}
+
+
+.clr{clear: both}

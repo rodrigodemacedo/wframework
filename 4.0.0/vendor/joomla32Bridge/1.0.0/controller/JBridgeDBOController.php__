@@ -1,0 +1,28 @@
+<?php
+/**
+ * Executa toda a regra de neg�cio inerente � interação com a base de dados
+ * 
+ * @author Rodrigo de Macêdo 
+ * @package packages
+ * @subpackage facade
+ * @version 1.0.0 <2011-02-07>
+ *
+ */
+class JBridgeDBOController{
+	
+	/**
+	 * Obt�m o objeto do joomla que controla a interação com a base de dados
+	 * 
+	 * @author Rodrigo de Macêdo <wrodrigo.macedo@msn.com>
+	 * @version 1.0 <2011-02-04>
+	 * @since 1.0
+	 * 
+	 * @return JDatabaseMySQL DBO do Joomla!
+	 */
+	public function getDBO() {
+		$db =& JFactory::getDBO();
+		FIncludeHelper::loadClass('fwPackage.joomla15Bridge.class.JBridgeMySQL');
+		
+		return new JBridgeMySQL($db);
+	}
+}

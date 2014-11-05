@@ -1,0 +1,85 @@
+Cria elementos a partir de códigos:
+
+[inputtext #telefone @fone .obrigatorio .data $"(81) 3255.0577" §"margin-top:8px"]
+
+<input type="text" id="telefone" name="fone" class="obrigatorio data" value="(81) 3255.0577" class="margin-top:8px">
+
+[radio #id selected $"1"]
+
+<input type="radio" id="id" selected="selected" value="1" />
+
+lista dos itens especiais:
+
+string		[string $"Meu Texto"]							"Meu Texto"
+inputtext 	[inputtext #nome @nome_cliente .obrigatorio $"Rodrigo"] 		<input type="text" id="nome" name="nome_cliente" class="obrigatorio" value="Rodrigo" />
+inputdate       [inputdate #nome @nome_cliente .obrigatorio $"Rodrigo"]                 <input type="text" id="nome" name="nome_cliente" class="obrigatorio campo_data" value="Rodrigo" />
+inputbutton 	[inputbutton #btn_buscar $"Buscar Clientes"] 				<input type="button" id="btn_buscar" value="Buscar Clientes" />
+checkbox 	[checkbox label_style1"Sexo: " #@sexo $"1"] 				<label class="style1" for="sexo">Sexo: </label> <input type="checkbox" id="sexo" name="sexo" value="1">
+file		[file #arquivo §"font-weight: bold; margin-left:10px"]			<input type="file" id="arquivo" style="font-weight: bold; margin-left:10px" />
+hidden 		[hidden @param1 $"parametro"]				 		<input type="hidden" name="param1" value="parametro" />
+password	[password #senha]							<input type="password" id="senha" />
+radio		veja: checkbox
+reset		[reset $"Redefinir"]							<input type="reset" value="Redefinir" />
+cancelback	[calcelback $"Voltar"]							<input type="button" onclick="history.back(-1)" value="Voltar" />
+submit		[submit #submeter $"Cadastrar"]						<input type="button" id="submeter" value="Cadastrar" />
+option		[option grp"Novos" $"novo1" label"Novo 1"]				<optgroup label="Novos"><option value="novo1">Novo 1</option></optgroup>
+
+outros elementos: div, br, select, hr, a, strong, ul, ol, li, i, img, table, tr, tbody, thead, tfooter
+
+Atributos especiais:
+# - adiciona um id ao elemento - #nome, #identificador...
+@ - adiciona um name ao elemento - @nome, @identificador...
+#@ ou @# - adiciona um id e um name com o mesmo valor - #@nome, @#id...
+. - adiciona uma classe ao elemento - .obrigatorio, .fonteGrande...
+$"" - preenche um value ao atributo (inserir dentro das aspas)
+§"" - adiciona styles inline ao elemento
+grp"" - usado somente em option - insere o option dentro do optgroup especificado neste atributo
+selected - adiciona o atributo selected="selected"
+checked - adiciona o atributo checked="checked"
+label"" - usado somente em option, checkbox e radio - adiciona um label ao elemento
+label_<classe css>"" - usado somente em option, checkbox e radio - adiciona um label ao elemento e aplica a classe css nele
+multiple - usado somente em select - adiciona o atributo multiple="multiple"
+maxlength"x" - x é o número máximo de caracteres
+
+
+
+
+//
+// COMBO BOX = DADOS
+//
+
+$arrItens = array(
+	Object::_('[option grp"Novos"  $"novo1"  label"Novo 1"]'),
+	Object::_('[option grp"Novos"  $"novo2"  selected label"Novo 2"]'),
+	Object::_('[option grp"Velhos" $"velho1" label"Velho 1"]'),
+	Object::_('[option grp"Velhos" $"velho2" label"Velho 2"]'),
+);
+
+$lista = Object::_("[select #itens multiple]")->addChild($arrItens);
+
+
+//
+// TABELA DE DADOS (http://sistemas.jc.com.br/callcenter/portaaporta/relatorios/work_periodo/)
+//
+
+$tblDados = new TabelaDados(
+	//cabeçalho
+	array(
+		"Work ID", "Assinante", "Data Visita"
+	),
+
+	//dados
+	array(
+		array(1,"Rodrigo","23/07/2013"),
+		array(2,"Macedo","25/07/2013")
+	)
+);
+
+
+Object::_("[tabela_dados]",NULL,
+	
+	
+);
+
+
+
